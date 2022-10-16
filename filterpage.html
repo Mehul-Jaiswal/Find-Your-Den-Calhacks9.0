@@ -1,58 +1,68 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filters || Find Your DEN</title>
-    <link rel="stylesheet" href="filterpage.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<title> Multiple Options Select Menu </title>-->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="filterpage.css">
+                                
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        
+    </head>
   <body>
     
   
-    <div class="container-fluid">
-        <div class="row" id="fs_app">
-            
-            <section class="col-12" id="fs_header_bar">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="fa fa-chevron-left"></i>
-                    </div>
-                    <div class="col-10" id="fs_page_title">
-                        Filters
-                    </div>
-                </div>
-            </section>
+    <section class="col-12" id="fs_distance_body">
+                
+        <div class="container">
+          <div class="select-btn">
+              <span class="btn-text">Price</span>
+              <span class="arrow-dwn">
+                  <i class="fa-solid fa-chevron-down"></i>
+              </span>
+          </div>
 
-            <section class="col-12" id="fs_price_body">
-                <div class="wrapper">
-                    <header>
-                      <h2>Price Range</h2>
-                      <p>Use slider or enter min and max price</p>
-                    </header>
-                    <div class="price-input">
-                      <div class="field">
-                        <span>Min</span>
-                        <input type="number" class="input-min" value="2500">
-                      </div>
-                      <div class="separator">-</div>
-                      <div class="field">
-                        <span>Max</span>
-                        <input type="number" class="input-max" value="7500">
-                      </div>
-                    </div>
-                    <div class="slider">
-                      <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                      <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                      <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                  </div>
-            </section>
+      
+              
+
+          <ul class="list-items">
+              <li class="item">
+                  <span class="checkbox">
+                      <i class="fa-solid fa-check check-icon"></i>
+                  </span>
+                  <span class="item-text">Less than $2000</span>
+              </li>
+              <li class="item">
+                  <span class="checkbox">
+                      <i class="fa-solid fa-check check-icon"></i>
+                  </span>
+                  <span class="item-text">$2000-$2500</span>
+              </li>
+              <li class="item">
+                <span class="checkbox">
+                    <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">$2500 - $3000</span>
+            </li>
+            <li class="item">
+                <span class="checkbox">
+                    <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">$3000- $3500</span>
+            </li>
+            <li class="item">
+                <span class="checkbox">
+                    <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">$3500-$4000</span>
+            </li>
+              
+          </ul>
+      </div>
+  </section>
 
         
 
@@ -145,12 +155,7 @@
                         </span>
                         <span class="item-text">Studio</span>
                     </li>
-                    <li class="item">
-                        <span class="checkbox">
-                            <i class="fa-solid fa-check check-icon"></i>
-                        </span>
-                        <span class="item-text">5</span>
-                    </li>
+                    
                       
                   </ul>
               </div>
@@ -335,6 +340,7 @@
                       </ul>
                   </div>
               </section>
+              <script src="script.js"></script>
             
             
 
