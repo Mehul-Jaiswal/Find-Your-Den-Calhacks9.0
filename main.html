@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="validation.js"></script>
+    <link>
     <title>Find your Den</title>
 </head>
 
@@ -20,21 +22,25 @@
 
             </div>
             <div class="socials">
+                <a href="https://www.facebook.com/"></a>
                 <img src="/Users/mehuljaiswal/Desktop/Calhacks9.0/meta.png">
-                <img src="/Users/mehuljaiswal/Desktop/Calhacks9.0/google.png">
+                </a>
+                <a href="https://www.google.com/">
+                    <img src="/Users/mehuljaiswal/Desktop/Calhacks9.0/google.jpeg">
+                </a>
             </div>
-            <form id="login" class="forms">
-                <input type="text" class="input" placeholder="Email" required>
-                <input type="text" class="input" placeholder="Password" required>
+            <form id="login" class="forms" action="filters.html">
+                <input type="text" id="email" class="input" placeholder="Email" required>
+                <input type="text" id="password" class="input" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>Remember me</span>
-                <button type="submit" class="submit-btn">Log-in</button>
+                <button type="submit" class="submit-btn" onclick="validate()">Log-in</button>
             </form>
-            <form id="register" class="forms">
+            <form id="register" class="forms" action="filters.html">
                 <input type="text" class="input" placeholder="Name" required>
                 <input type="text" class="input" placeholder="Email" required>
                 <input type="text" class="input" placeholder="Password" required>
                 <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
+                <button type="submit" class="submit-btn" onclick="validate()">Register</button>
             </form>
 
         </div>
