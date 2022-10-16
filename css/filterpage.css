@@ -117,7 +117,13 @@ button#accept-button {
     color: blue;
     border: 1px solid;
   }
-  button#accept-button:hover {
-    background-color: rgb(30, 255, 53);
-    color: white;
-  }
+  
+.popup-button {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ca55271f;
+    border-radius: 20px;
+    left: 310px;
+    align-items: center;
+}
