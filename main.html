@@ -8,33 +8,56 @@
     <link rel="stylesheet" href="style.css" />
     <title>Find your Den</title>
 </head>
-<div class="main">
-    <h1 size=20>Find Your Den
-    </h1>
-    <div class="login">
-        <div class="button-box">
-            <div id="b1"></div>
-            <button type="button" class="toggle">Log In</button>
-            <button type="button" class="toggle">Register</button>
-
-        </div>
-        <div class="socials">
-            <img src="/Users/mehuljaiswal/Desktop/Calhacks9.0/meta.png">
-            <img src="/Users/mehuljaiswal/Desktop/Calhacks9.0/google.png">
-        </div>
-        <form class="forms">
-            <input type="text" class="inpt" placeholder="Email" required>
-            <input type="text" class="inpt" placeholder="Password" required>
-            <input type="checkbox" class="check-box"><span>Remember me</span>
-            <input type="submit" class="submit-btn"><span>Log-in</span>
-        </form>
-
-    </div>
-
-
-</div>
 
 <body>
+    <div class="main">
+        <h1 size=20>Find Your Den</h1>
+        <div class="login">
+            <div class="button-box">
+                <div id="b1"></div>
+                <button type="button" class="toggle" onclick="login()">Log In</button>
+                <button type="button" class="toggle" onclick="register()">Register</button>
+
+            </div>
+            <div class="socials">
+                <img src="/Users/mehuljaiswal/Desktop/Calhacks9.0/meta.png">
+                <img src="/Users/mehuljaiswal/Desktop/Calhacks9.0/google.png">
+            </div>
+            <form id="login" class="forms">
+                <input type="text" class="input" placeholder="Email" required>
+                <input type="text" class="input" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember me</span>
+                <button type="submit" class="submit-btn">Log-in</button>
+            </form>
+            <form id="register" class="forms">
+                <input type="text" class="input" placeholder="Name" required>
+                <input type="text" class="input" placeholder="Email" required>
+                <input type="text" class="input" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+
+
+    </div>
+    <script>
+        var a = document.getElementById("register");
+        var b = document.getElementById("login");
+        var c = document.getElementById("b1");
+
+        function register() {
+            b.style.left = "-500px"
+            a.style.left = "50px"
+            c.style.left = "110px"
+        }
+
+        function login() {
+            b.style.left = "50px"
+            a.style.left = "550px"
+            c.style.left = "0"
+        }
+    </script>
 
 </body>
 
